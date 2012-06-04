@@ -1,0 +1,12 @@
+C:\Users\Dell\Desktop\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\bin\Debug\CarAndDriverMAnagementSystem.exe.config
+C:\Users\Dell\Desktop\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dell\Desktop\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\CarAndDriverMAnagementSystem.frmLogin.resources
+C:\Users\Dell\Desktop\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\CarAndDriverMAnagementSystem.Properties.Resources.resources
+C:\Users\Dell\Desktop\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Dell\Desktop\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Dell\Desktop\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\CarAndDriverMAnagementSystem.exe
+C:\Users\Dell\Desktop\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\CarAndDriverMAnagementSystem.pdb
+C:\Users\Dell\Desktop\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\bin\Debug\CarAndDriverMAnagementSystem.exe
+C:\Users\Dell\Desktop\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\bin\Debug\CarAndDriverMAnagementSystem.pdb
+C:\Users\Dell\Desktop\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\CarAndDriverMAnagementSystem.frmCar.resources
+C:\Users\Dell\Desktop\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\CarAndDriverMAnagementSystem.frmMain.resources
