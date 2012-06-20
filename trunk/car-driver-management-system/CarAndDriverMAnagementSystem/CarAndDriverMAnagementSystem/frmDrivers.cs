@@ -84,7 +84,7 @@ namespace CarAndDriverMAnagementSystem
         private void btnView_Click(object sender, EventArgs e)
         {
             Code = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            frmView view = new frmView();
+            frmViewDriver view = new frmViewDriver();
             view.Show();
             this.Hide();
         }

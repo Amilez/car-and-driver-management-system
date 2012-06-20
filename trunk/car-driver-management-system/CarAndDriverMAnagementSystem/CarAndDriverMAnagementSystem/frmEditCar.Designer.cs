@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditCar));
             this.add = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,6 +50,8 @@
             this.dtpBoughtDate = new System.Windows.Forms.DateTimePicker();
             this.txtLiquidationreason = new System.Windows.Forms.TextBox();
             this.dtpLiquidationDate = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // add
@@ -56,16 +59,16 @@
             this.add.AutoSize = true;
             this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add.ForeColor = System.Drawing.Color.Red;
-            this.add.Location = new System.Drawing.Point(177, 9);
+            this.add.Location = new System.Drawing.Point(164, 9);
             this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(93, 37);
+            this.add.Size = new System.Drawing.Size(173, 37);
             this.add.TabIndex = 0;
-            this.add.Text = "EDIT";
+            this.add.Text = "EDIT CAR";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(93, 77);
+            this.label2.Location = new System.Drawing.Point(206, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 0;
@@ -74,7 +77,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(93, 120);
+            this.label3.Location = new System.Drawing.Point(206, 103);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 0;
@@ -83,7 +86,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(93, 160);
+            this.label4.Location = new System.Drawing.Point(206, 143);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 0;
@@ -92,7 +95,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(93, 206);
+            this.label5.Location = new System.Drawing.Point(206, 189);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(90, 13);
             this.label5.TabIndex = 0;
@@ -101,7 +104,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(93, 254);
+            this.label6.Location = new System.Drawing.Point(206, 237);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 13);
             this.label6.TabIndex = 0;
@@ -110,7 +113,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(93, 306);
+            this.label7.Location = new System.Drawing.Point(206, 289);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 13);
             this.label7.TabIndex = 0;
@@ -119,7 +122,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(93, 354);
+            this.label8.Location = new System.Drawing.Point(206, 337);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 13);
             this.label8.TabIndex = 0;
@@ -127,51 +130,51 @@
             // 
             // txtCarname
             // 
-            this.txtCarname.Location = new System.Drawing.Point(200, 70);
+            this.txtCarname.Location = new System.Drawing.Point(359, 53);
             this.txtCarname.Name = "txtCarname";
-            this.txtCarname.Size = new System.Drawing.Size(161, 20);
+            this.txtCarname.Size = new System.Drawing.Size(144, 20);
             this.txtCarname.TabIndex = 1;
             // 
             // txtCarcode
             // 
-            this.txtCarcode.Location = new System.Drawing.Point(200, 113);
+            this.txtCarcode.Location = new System.Drawing.Point(359, 96);
             this.txtCarcode.Name = "txtCarcode";
             this.txtCarcode.ReadOnly = true;
-            this.txtCarcode.Size = new System.Drawing.Size(161, 20);
+            this.txtCarcode.Size = new System.Drawing.Size(144, 20);
             this.txtCarcode.TabIndex = 1;
             // 
             // txtSuplier
             // 
-            this.txtSuplier.Location = new System.Drawing.Point(200, 153);
+            this.txtSuplier.Location = new System.Drawing.Point(359, 136);
             this.txtSuplier.Name = "txtSuplier";
-            this.txtSuplier.Size = new System.Drawing.Size(161, 20);
+            this.txtSuplier.Size = new System.Drawing.Size(144, 20);
             this.txtSuplier.TabIndex = 1;
             // 
             // txtCompensAmout
             // 
-            this.txtCompensAmout.Location = new System.Drawing.Point(200, 199);
+            this.txtCompensAmout.Location = new System.Drawing.Point(359, 182);
             this.txtCompensAmout.Name = "txtCompensAmout";
-            this.txtCompensAmout.Size = new System.Drawing.Size(161, 20);
+            this.txtCompensAmout.Size = new System.Drawing.Size(144, 20);
             this.txtCompensAmout.TabIndex = 1;
             // 
             // txtUnitPrice
             // 
-            this.txtUnitPrice.Location = new System.Drawing.Point(200, 299);
+            this.txtUnitPrice.Location = new System.Drawing.Point(359, 282);
             this.txtUnitPrice.Name = "txtUnitPrice";
-            this.txtUnitPrice.Size = new System.Drawing.Size(161, 20);
+            this.txtUnitPrice.Size = new System.Drawing.Size(144, 20);
             this.txtUnitPrice.TabIndex = 1;
             // 
             // txtRentPrice
             // 
-            this.txtRentPrice.Location = new System.Drawing.Point(200, 347);
+            this.txtRentPrice.Location = new System.Drawing.Point(359, 330);
             this.txtRentPrice.Name = "txtRentPrice";
-            this.txtRentPrice.Size = new System.Drawing.Size(161, 20);
+            this.txtRentPrice.Size = new System.Drawing.Size(144, 20);
             this.txtRentPrice.TabIndex = 1;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(93, 442);
+            this.label9.Location = new System.Drawing.Point(206, 425);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(84, 13);
             this.label9.TabIndex = 0;
@@ -180,7 +183,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(93, 395);
+            this.label10.Location = new System.Drawing.Point(206, 378);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(98, 13);
             this.label10.TabIndex = 0;
@@ -188,37 +191,43 @@
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(116, 491);
+            this.btnOk.Image = ((System.Drawing.Image)(resources.GetObject("btnOk.Image")));
+            this.btnOk.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOk.Location = new System.Drawing.Point(193, 463);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(75, 23);
+            this.btnOk.Size = new System.Drawing.Size(61, 26);
             this.btnOk.TabIndex = 2;
             this.btnOk.Text = "Ok";
+            this.btnOk.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOk.UseVisualStyleBackColor = true;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(246, 491);
+            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
+            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancel.Location = new System.Drawing.Point(316, 463);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(79, 26);
             this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "Cancel";
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // dtpBoughtDate
             // 
             this.dtpBoughtDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpBoughtDate.Location = new System.Drawing.Point(200, 247);
+            this.dtpBoughtDate.Location = new System.Drawing.Point(359, 230);
             this.dtpBoughtDate.Name = "dtpBoughtDate";
-            this.dtpBoughtDate.Size = new System.Drawing.Size(161, 20);
+            this.dtpBoughtDate.Size = new System.Drawing.Size(144, 20);
             this.dtpBoughtDate.TabIndex = 3;
             // 
             // txtLiquidationreason
             // 
-            this.txtLiquidationreason.Location = new System.Drawing.Point(200, 388);
+            this.txtLiquidationreason.Location = new System.Drawing.Point(359, 371);
             this.txtLiquidationreason.Name = "txtLiquidationreason";
-            this.txtLiquidationreason.Size = new System.Drawing.Size(161, 20);
+            this.txtLiquidationreason.Size = new System.Drawing.Size(144, 20);
             this.txtLiquidationreason.TabIndex = 1;
             this.txtLiquidationreason.TextChanged += new System.EventHandler(this.txtLiquidationreason_TextChanged);
             // 
@@ -226,16 +235,26 @@
             // 
             this.dtpLiquidationDate.Enabled = false;
             this.dtpLiquidationDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpLiquidationDate.Location = new System.Drawing.Point(200, 435);
+            this.dtpLiquidationDate.Location = new System.Drawing.Point(359, 418);
             this.dtpLiquidationDate.Name = "dtpLiquidationDate";
-            this.dtpLiquidationDate.Size = new System.Drawing.Size(161, 20);
+            this.dtpLiquidationDate.Size = new System.Drawing.Size(144, 20);
             this.dtpLiquidationDate.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(60, 136);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // frmEditCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 529);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(564, 501);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dtpLiquidationDate);
             this.Controls.Add(this.dtpBoughtDate);
             this.Controls.Add(this.btnCancel);
@@ -260,6 +279,7 @@
             this.Name = "frmEditCar";
             this.Text = "frmEditCar";
             this.Load += new System.EventHandler(this.frmEditCar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,5 +308,6 @@
         private System.Windows.Forms.DateTimePicker dtpBoughtDate;
         private System.Windows.Forms.TextBox txtLiquidationreason;
         private System.Windows.Forms.DateTimePicker dtpLiquidationDate;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
