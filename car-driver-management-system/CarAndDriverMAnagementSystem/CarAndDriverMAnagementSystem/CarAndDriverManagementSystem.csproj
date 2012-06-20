@@ -96,17 +96,17 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmUser.Designer.cs">
-      <DependentUpon>frmUser.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmView.Designer.cs">
       <DependentUpon>frmView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewDriver.Designer.cs">
+      <DependentUpon>frmViewDriver.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -137,15 +137,13 @@
     <EmbeddedResource Include="frmView.resx">
       <DependentUpon>frmView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmViewDriver.resx">
+      <DependentUpon>frmViewDriver.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -156,6 +154,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WLM-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log Out_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help-file-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database Inactive Hot_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_add-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

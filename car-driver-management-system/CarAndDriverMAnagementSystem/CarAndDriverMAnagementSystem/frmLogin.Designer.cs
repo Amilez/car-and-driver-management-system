@@ -33,20 +33,20 @@
             this.lblLogin = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(103, 99);
+            this.txtName.Location = new System.Drawing.Point(120, 87);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 20);
             this.txtName.TabIndex = 1;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(103, 140);
+            this.txtPassword.Location = new System.Drawing.Point(120, 128);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(100, 20);
             this.txtPassword.TabIndex = 2;
@@ -66,7 +66,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 102);
+            this.label2.Location = new System.Drawing.Point(45, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 6;
@@ -75,38 +75,38 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 140);
+            this.label3.Location = new System.Drawing.Point(45, 128);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 0;
             this.label3.Text = "Password";
             // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(120, 203);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 4;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(31, 203);
+            this.btnLogin.Image = global::CarAndDriverMAnagementSystem.Properties.Resources._lock;
+            this.btnLogin.Location = new System.Drawing.Point(48, 186);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.Size = new System.Drawing.Size(52, 45);
             this.btnLogin.TabIndex = 3;
-            this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.exit_48;
+            this.btnCancel.Location = new System.Drawing.Point(145, 186);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(62, 45);
+            this.btnCancel.TabIndex = 4;
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(250, 248);
+            this.ClientSize = new System.Drawing.Size(264, 243);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label3);
