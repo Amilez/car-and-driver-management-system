@@ -57,7 +57,7 @@
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.Red;
-            this.lblLogin.Location = new System.Drawing.Point(87, 37);
+            this.lblLogin.Location = new System.Drawing.Point(78, 36);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(85, 31);
             this.lblLogin.TabIndex = 5;
@@ -105,7 +105,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(250, 248);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label3);

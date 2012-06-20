@@ -48,11 +48,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="connect.cs" />
+    <Compile Include="frmAddDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddDriver.Designer.cs">
+      <DependentUpon>frmAddDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDrivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDrivers.Designer.cs">
+      <DependentUpon>frmDrivers.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddCar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAddCar.Designer.cs">
       <DependentUpon>frmAddCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditCar.Designer.cs">
+      <DependentUpon>frmEditCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditDriver.Designer.cs">
+      <DependentUpon>frmEditDriver.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -66,12 +90,6 @@
     <Compile Include="frmCar.Designer.cs">
       <DependentUpon>frmCar.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDriver.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDriver.Designer.cs">
-      <DependentUpon>frmDriver.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,19 +102,40 @@
     <Compile Include="frmUser.Designer.cs">
       <DependentUpon>frmUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView.Designer.cs">
+      <DependentUpon>frmView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddDriver.resx">
+      <DependentUpon>frmAddDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDrivers.resx">
+      <DependentUpon>frmDrivers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddCar.resx">
       <DependentUpon>frmAddCar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCar.resx">
       <DependentUpon>frmCar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEditCar.resx">
+      <DependentUpon>frmEditCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditDriver.resx">
+      <DependentUpon>frmEditDriver.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView.resx">
+      <DependentUpon>frmView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

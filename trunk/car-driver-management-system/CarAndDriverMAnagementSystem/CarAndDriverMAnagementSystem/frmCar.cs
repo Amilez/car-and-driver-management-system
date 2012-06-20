@@ -85,7 +85,10 @@ namespace CarAndDriverMAnagementSystem
 
         private void btnView_Click(object sender, EventArgs e)
         {
-
+            Code = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            frmView view = new frmView();
+            view.Show();
+            this.Hide();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -98,10 +101,18 @@ namespace CarAndDriverMAnagementSystem
         private void btnEdit_Click(object sender, EventArgs e)
         {
             Code = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-           // MessageBox.Show(Code);
-            frmEdit edit = new frmEdit();
+            // MessageBox.Show(Code);
+            frmEditCar edit = new frmEditCar();
             edit.Show();
             this.Hide();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+           frmMain view = new frmMain();
+            view.Show();
+
         }
     }
 }

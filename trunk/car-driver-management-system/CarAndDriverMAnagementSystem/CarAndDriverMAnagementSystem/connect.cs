@@ -16,6 +16,7 @@ namespace CarAndDriverMAnagementSystem
                 conn = new SqlConnection(strCon);
             }
             catch(SqlException ex){
+                Console.WriteLine(ex.Message);
             }
             return conn;
         }
