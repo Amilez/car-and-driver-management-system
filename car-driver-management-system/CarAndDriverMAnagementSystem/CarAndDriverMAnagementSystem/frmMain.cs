@@ -33,9 +33,23 @@ namespace CarAndDriverMAnagementSystem
 
         private void managerDriverToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmDriver driver= new frmDriver();
+            frmDrivers driver= new frmDrivers();
             driver.Show();
             this.Hide();
+        }
+
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            frmLogin view = new frmLogin();
+            view.Show();
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

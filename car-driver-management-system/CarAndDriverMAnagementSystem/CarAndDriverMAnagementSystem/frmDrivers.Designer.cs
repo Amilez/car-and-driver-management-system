@@ -1,6 +1,6 @@
 ﻿namespace CarAndDriverMAnagementSystem
 {
-    partial class frmCar
+    partial class frmDrivers
     {
         /// <summary>
         /// Required designer variable.
@@ -38,8 +38,6 @@
             this.btnView = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.btnSearchBoughtDate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,32 +48,33 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(272, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 37);
+            this.label1.Size = new System.Drawing.Size(141, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "CAR";
+            this.label1.Text = "DRIVER";
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(192, 55);
+            this.txtSearch.Location = new System.Drawing.Point(57, 67);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(100, 20);
+            this.txtSearch.Size = new System.Drawing.Size(150, 20);
             this.txtSearch.TabIndex = 1;
             // 
             // cboSearch
             // 
             this.cboSearch.FormattingEnabled = true;
             this.cboSearch.Items.AddRange(new object[] {
-            "Car by codes",
-            "Car by names",
-            "Car by code of driver who is renting the car"});
-            this.cboSearch.Location = new System.Drawing.Point(37, 55);
+            "Driver by codes",
+            "Driver by names",
+            "Driver by address",
+            "Driver by code of car which are being rented"});
+            this.cboSearch.Location = new System.Drawing.Point(292, 67);
             this.cboSearch.Name = "cboSearch";
             this.cboSearch.Size = new System.Drawing.Size(121, 21);
             this.cboSearch.TabIndex = 2;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(330, 55);
+            this.btnSearch.Location = new System.Drawing.Point(548, 67);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 3;
@@ -140,44 +139,24 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(194, 103);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(98, 20);
-            this.dateTimePicker1.TabIndex = 6;
-            // 
-            // btnSearchBoughtDate
-            // 
-            this.btnSearchBoughtDate.Location = new System.Drawing.Point(330, 100);
-            this.btnSearchBoughtDate.Name = "btnSearchBoughtDate";
-            this.btnSearchBoughtDate.Size = new System.Drawing.Size(123, 23);
-            this.btnSearchBoughtDate.TabIndex = 3;
-            this.btnSearchBoughtDate.Text = "Search Bought Date";
-            this.btnSearchBoughtDate.UseVisualStyleBackColor = true;
-            this.btnSearchBoughtDate.Click += new System.EventHandler(this.btnSearchBoughtDate_Click);
-            // 
-            // frmCar
+            // frmDrivers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(709, 515);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnReport);
             this.Controls.Add(this.btnView);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnSearchBoughtDate);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.cboSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label1);
-            this.Name = "frmCar";
+            this.Name = "frmDrivers";
             this.Text = "frmCar";
-            this.Load += new System.EventHandler(this.frmCar_Load);
+            this.Load += new System.EventHandler(this.frmDrivers_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -196,7 +175,5 @@
         private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.Button btnReport;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button btnSearchBoughtDate;
     }
 }

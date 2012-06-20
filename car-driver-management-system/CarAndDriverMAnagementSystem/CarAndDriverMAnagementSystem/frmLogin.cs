@@ -26,35 +26,24 @@ namespace CarAndDriverMAnagementSystem
                 SqlConnection conn = connect.Getconect();
                 conn.Open();
 
-                string sql = "select permission ,username,password from TblUser where username='" + name + "' and password='" + pass + "'";
-                //MessageBox.Show(sql);
-                SqlCommand cmd;
+                string sql = "select * from TblUser where username='" + name + "' and password='" + pass + "'";
+                 SqlCommand cmd;
                 cmd= new SqlCommand(sql, conn);
                 SqlDataReader sdr = cmd.ExecuteReader();
                 if (sdr.Read())
                 {
-                    string permis;
-                    permis= sdr.GetValue(0).ToString();
-                    if (permis=="Admin")
-                    {
-                        MessageBox.Show("Wellcome Admin Login successfull!");
-                        frmMain main = new frmMain();
-                        main.Show();
-                        this.Hide();
-
-                    }
-                    else {
+             
                         MessageBox.Show("Wellcome " + name + " Login successfull!");
                         frmMain main = new frmMain();
                         main.Show();
                         this.Hide();
                     }
-                }
+          
                 else{
                     MessageBox.Show("Login error");
                 }
             }
-            catch (SqlException) { }
+            catch (SqlException ex) { MessageBox.Show(ex.Message); }
 
 
 

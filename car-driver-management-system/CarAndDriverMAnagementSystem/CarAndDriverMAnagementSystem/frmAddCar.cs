@@ -37,8 +37,7 @@ namespace CarAndDriverMAnagementSystem
             {
                 SqlConnection conn = connect.Getconect();
                 conn.Open();
-                if (carcode != "" && carname != "" && suplier != "" && compens != "" && boughtdate != "" && Unitprice != "" && rentprice != "")
-                {
+                
                     string sql = "insert into tblCars values ('" + carcode + "','" + carname + "','" + suplier + "','" + compens + "','" + boughtdate + "','" + Unitprice + "','" + rentprice + "','null','null')";
                     SqlCommand cmd = new SqlCommand(sql, conn);
                     cmd.ExecuteNonQuery();
@@ -46,15 +45,13 @@ namespace CarAndDriverMAnagementSystem
                     frm.Show();
                     this.Dispose();
                 }
-                else { MessageBox.Show("Please enter full data!");
-                txtCarcode.Focus();
-                }
-            }
+                
             catch (SqlException ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
         }
+
     }
 }

@@ -15,7 +15,7 @@ namespace CarAndDriverMAnagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCar());
+            Application.Run(new frmDrivers());
         }
     }
 }

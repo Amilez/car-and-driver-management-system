@@ -23,3 +23,8 @@ E:\CNPM\car-driver\car-driver-management-system\CarAndDriverMAnagementSystem\Car
 E:\CNPM\car-driver\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\GenerateResource.read.1.tlog
 E:\CNPM\car-driver\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\GenerateResource.write.1.tlog
 E:\CNPM\car-driver\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\CarAndDriverMAnagementSystem.frmAddCar.resources
+E:\CNPM\car-driver\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\CarAndDriverMAnagementSystem.frmEditCar.resources
+E:\CNPM\car-driver\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\CarAndDriverMAnagementSystem.frmView.resources
+E:\CNPM\car-driver\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\CarAndDriverMAnagementSystem.frmDrivers.resources
+E:\CNPM\car-driver\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\CarAndDriverMAnagementSystem.frmAddDriver.resources
+E:\CNPM\car-driver\car-driver-management-system\CarAndDriverMAnagementSystem\CarAndDriverMAnagementSystem\obj\x86\Debug\CarAndDriverMAnagementSystem.frmEditDriver.resources
