@@ -18,9 +18,9 @@ namespace CarAndDriverMAnagementSystem
 
         private void managerUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmUser user = new frmUser();
-            user.Show();
-            this.Hide();
+            //frmUser user = new frmUser();
+            //user.Show();
+            //this.Hide();
         }
 
         private void managerCarToolStripMenuItem_Click(object sender, EventArgs e)

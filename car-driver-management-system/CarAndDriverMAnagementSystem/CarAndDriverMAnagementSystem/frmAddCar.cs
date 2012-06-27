@@ -30,26 +30,44 @@ namespace CarAndDriverMAnagementSystem
             string carname = txtCarname.Text;
             string suplier = txtSuplier.Text;
             string compens = txtCompens.Text;
-            string boughtdate = boughtDate.Text;
+              string boughtdate = boughtDate.Text;
             string Unitprice = txtUnitprice.Text;
             string rentprice = txtRentprice.Text;
+            SqlConnection conn = connect.Getconect();
+            conn.Open();
             try
             {
-                SqlConnection conn = connect.Getconect();
-                conn.Open();
-                
-                    string sql = "insert into tblCars values ('" + carcode + "','" + carname + "','" + suplier + "','" + compens + "','" + boughtdate + "','" + Unitprice + "','" + rentprice + "','null','null')";
+                if (txtCarcode.Text == "" || txtCarname.Text == "" || txtCompens.Text == "" || txtSuplier.Text == "" || txtUnitprice.Text=="" || txtRentprice.Text=="")
+                {
+                    MessageBox.Show("You must enter full information");
+                }
+                else
+                {
+                    string sql = "insert into tblCars values ('" + carcode + "','" + carname + "','" + suplier + "','" + compens + "','" + boughtdate + "','" + Unitprice + "','" + rentprice + "',null,null)";
                     SqlCommand cmd = new SqlCommand(sql, conn);
                     cmd.ExecuteNonQuery();
+                    MessageBox.Show("Add successfull");
                     frmCar frm = new frmCar();
                     frm.Show();
                     this.Dispose();
                 }
-                
+            }
             catch (SqlException ex)
             {
                 MessageBox.Show(ex.Message);
             }
+
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtCarcode.Text = "";
+            txtCarname.Text = "";
+            txtSuplier.Text = "";
+            txtCompens.Text = "";
+            txtRentprice.Text = "";
+            txtUnitprice.Text= "";
+
 
         }
 

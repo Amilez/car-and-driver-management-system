@@ -126,5 +126,46 @@ namespace CarAndDriverMAnagementSystem
             conn.Close();
 
         }
+        public void reload() {
+            SqlConnection conn = connect.Getconect();
+            conn.Open();
+            string sql = "select * from tblDrivers";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            sda.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
+            conn.Close();
+        }
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            frmReportDriver view = new frmReportDriver();
+            view.Show();
+            this.Hide();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnView.Enabled = true;
+            btnEdit.Enabled = true;
+        }
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+
+            string id = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            DialogResult kq = MessageBox.Show("Are you sure delete driver with driver code:" + id + "?", "Notice", MessageBoxButtons.YesNo);
+            if (kq == DialogResult.Yes)
+            {
+                SqlConnection conn = connect.Getconect();
+                conn.Open();
+                string sql = "delete tbldrivers where driver_code='" + id + "'";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataReader sdr = cmd.ExecuteReader();
+                MessageBox.Show("Delete success");
+
+            }
+            reload();
+        }
     }
 }

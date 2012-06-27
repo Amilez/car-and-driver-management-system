@@ -41,8 +41,6 @@
             this.txtCarcode = new System.Windows.Forms.TextBox();
             this.txtSuplier = new System.Windows.Forms.TextBox();
             this.txtCompensAmout = new System.Windows.Forms.TextBox();
-            this.txtUnitPrice = new System.Windows.Forms.TextBox();
-            this.txtRentPrice = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btnOk = new System.Windows.Forms.Button();
@@ -51,6 +49,8 @@
             this.txtLiquidationreason = new System.Windows.Forms.TextBox();
             this.dtpLiquidationDate = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtUnitPrice = new System.Windows.Forms.MaskedTextBox();
+            this.txtRentPrice = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,11 +59,11 @@
             this.add.AutoSize = true;
             this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add.ForeColor = System.Drawing.Color.Red;
-            this.add.Location = new System.Drawing.Point(164, 9);
+            this.add.Location = new System.Drawing.Point(174, 9);
             this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(173, 37);
+            this.add.Size = new System.Drawing.Size(141, 37);
             this.add.TabIndex = 0;
-            this.add.Text = "EDIT CAR";
+            this.add.Text = "Edit Car";
             // 
             // label2
             // 
@@ -157,20 +157,6 @@
             this.txtCompensAmout.Size = new System.Drawing.Size(144, 20);
             this.txtCompensAmout.TabIndex = 1;
             // 
-            // txtUnitPrice
-            // 
-            this.txtUnitPrice.Location = new System.Drawing.Point(359, 282);
-            this.txtUnitPrice.Name = "txtUnitPrice";
-            this.txtUnitPrice.Size = new System.Drawing.Size(144, 20);
-            this.txtUnitPrice.TabIndex = 1;
-            // 
-            // txtRentPrice
-            // 
-            this.txtRentPrice.Location = new System.Drawing.Point(359, 330);
-            this.txtRentPrice.Name = "txtRentPrice";
-            this.txtRentPrice.Size = new System.Drawing.Size(144, 20);
-            this.txtRentPrice.TabIndex = 1;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -193,9 +179,9 @@
             // 
             this.btnOk.Image = ((System.Drawing.Image)(resources.GetObject("btnOk.Image")));
             this.btnOk.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOk.Location = new System.Drawing.Point(193, 463);
+            this.btnOk.Location = new System.Drawing.Point(251, 463);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(61, 26);
+            this.btnOk.Size = new System.Drawing.Size(64, 26);
             this.btnOk.TabIndex = 2;
             this.btnOk.Text = "Ok";
             this.btnOk.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -206,9 +192,9 @@
             // 
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancel.Location = new System.Drawing.Point(316, 463);
+            this.btnCancel.Location = new System.Drawing.Point(411, 463);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(79, 26);
+            this.btnCancel.Size = new System.Drawing.Size(70, 26);
             this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -248,20 +234,36 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // txtUnitPrice
+            // 
+            this.txtUnitPrice.Location = new System.Drawing.Point(359, 286);
+            this.txtUnitPrice.Mask = "0000000000";
+            this.txtUnitPrice.Name = "txtUnitPrice";
+            this.txtUnitPrice.Size = new System.Drawing.Size(144, 20);
+            this.txtUnitPrice.TabIndex = 6;
+            // 
+            // txtRentPrice
+            // 
+            this.txtRentPrice.Location = new System.Drawing.Point(359, 330);
+            this.txtRentPrice.Mask = "0000000000";
+            this.txtRentPrice.Name = "txtRentPrice";
+            this.txtRentPrice.Size = new System.Drawing.Size(144, 20);
+            this.txtRentPrice.TabIndex = 7;
+            // 
             // frmEditCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(564, 501);
+            this.Controls.Add(this.txtRentPrice);
+            this.Controls.Add(this.txtUnitPrice);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dtpLiquidationDate);
             this.Controls.Add(this.dtpBoughtDate);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.txtLiquidationreason);
-            this.Controls.Add(this.txtRentPrice);
-            this.Controls.Add(this.txtUnitPrice);
             this.Controls.Add(this.txtCompensAmout);
             this.Controls.Add(this.txtSuplier);
             this.Controls.Add(this.txtCarcode);
@@ -277,7 +279,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.add);
             this.Name = "frmEditCar";
-            this.Text = "frmEditCar";
+            this.Text = "Edit Car";
             this.Load += new System.EventHandler(this.frmEditCar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -299,8 +301,6 @@
         private System.Windows.Forms.TextBox txtCarcode;
         private System.Windows.Forms.TextBox txtSuplier;
         private System.Windows.Forms.TextBox txtCompensAmout;
-        private System.Windows.Forms.TextBox txtUnitPrice;
-        private System.Windows.Forms.TextBox txtRentPrice;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnOk;
@@ -309,5 +309,7 @@
         private System.Windows.Forms.TextBox txtLiquidationreason;
         private System.Windows.Forms.DateTimePicker dtpLiquidationDate;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.MaskedTextBox txtUnitPrice;
+        private System.Windows.Forms.MaskedTextBox txtRentPrice;
     }
 }

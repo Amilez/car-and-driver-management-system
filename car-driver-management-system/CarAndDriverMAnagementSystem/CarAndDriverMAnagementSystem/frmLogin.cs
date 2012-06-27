@@ -33,7 +33,7 @@ namespace CarAndDriverMAnagementSystem
                 if (sdr.Read())
                 {
              
-                        MessageBox.Show("Wellcome " + name + " Login successfull!");
+                        MessageBox.Show("Welcome " + name + " Login successfull!");
                         frmMain main = new frmMain();
                         main.Show();
                         this.Hide();

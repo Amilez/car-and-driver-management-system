@@ -50,7 +50,7 @@
             // rbFemale
             // 
             this.rbFemale.AutoSize = true;
-            this.rbFemale.Location = new System.Drawing.Point(321, 210);
+            this.rbFemale.Location = new System.Drawing.Point(249, 205);
             this.rbFemale.Name = "rbFemale";
             this.rbFemale.Size = new System.Drawing.Size(59, 17);
             this.rbFemale.TabIndex = 37;
@@ -61,7 +61,7 @@
             // rbMale
             // 
             this.rbMale.AutoSize = true;
-            this.rbMale.Location = new System.Drawing.Point(265, 210);
+            this.rbMale.Location = new System.Drawing.Point(193, 205);
             this.rbMale.Name = "rbMale";
             this.rbMale.Size = new System.Drawing.Size(48, 17);
             this.rbMale.TabIndex = 36;
@@ -72,7 +72,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(238, 170);
+            this.dateTimePicker1.Location = new System.Drawing.Point(166, 165);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(142, 20);
             this.dateTimePicker1.TabIndex = 35;
@@ -80,7 +80,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(154, 297);
+            this.label5.Location = new System.Drawing.Point(82, 292);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 13);
             this.label5.TabIndex = 32;
@@ -89,7 +89,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(154, 210);
+            this.label7.Location = new System.Drawing.Point(82, 205);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 13);
             this.label7.TabIndex = 33;
@@ -98,7 +98,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(154, 254);
+            this.label4.Location = new System.Drawing.Point(82, 249);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 13);
             this.label4.TabIndex = 34;
@@ -107,7 +107,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(154, 177);
+            this.label3.Location = new System.Drawing.Point(82, 172);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(28, 13);
             this.label3.TabIndex = 29;
@@ -116,7 +116,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(154, 129);
+            this.label2.Location = new System.Drawing.Point(82, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 13);
             this.label2.TabIndex = 28;
@@ -127,16 +127,16 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(206, 20);
+            this.label6.Location = new System.Drawing.Point(18, 15);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 37);
+            this.label6.Size = new System.Drawing.Size(372, 37);
             this.label6.TabIndex = 31;
-            this.label6.Text = "Driver";
+            this.label6.Text = "View Information Driver";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(154, 88);
+            this.label1.Location = new System.Drawing.Point(82, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 30;
@@ -144,21 +144,21 @@
             // 
             // txtTelephone
             // 
-            this.txtTelephone.Location = new System.Drawing.Point(280, 290);
+            this.txtTelephone.Location = new System.Drawing.Point(208, 285);
             this.txtTelephone.Name = "txtTelephone";
             this.txtTelephone.Size = new System.Drawing.Size(100, 20);
             this.txtTelephone.TabIndex = 27;
             // 
             // txtAdd
             // 
-            this.txtAdd.Location = new System.Drawing.Point(277, 247);
+            this.txtAdd.Location = new System.Drawing.Point(205, 242);
             this.txtAdd.Name = "txtAdd";
             this.txtAdd.Size = new System.Drawing.Size(100, 20);
             this.txtAdd.TabIndex = 26;
             // 
             // txtDrivername
             // 
-            this.txtDrivername.Location = new System.Drawing.Point(277, 129);
+            this.txtDrivername.Location = new System.Drawing.Point(205, 124);
             this.txtDrivername.Name = "txtDrivername";
             this.txtDrivername.Size = new System.Drawing.Size(100, 20);
             this.txtDrivername.TabIndex = 25;
@@ -166,22 +166,23 @@
             // txtDrivercode
             // 
             this.txtDrivercode.Enabled = false;
-            this.txtDrivercode.Location = new System.Drawing.Point(277, 88);
+            this.txtDrivercode.Location = new System.Drawing.Point(205, 83);
             this.txtDrivercode.Name = "txtDrivercode";
             this.txtDrivercode.Size = new System.Drawing.Size(100, 20);
             this.txtDrivercode.TabIndex = 24;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(145, 337);
+            this.dataGridView1.Location = new System.Drawing.Point(73, 332);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(235, 123);
             this.dataGridView1.TabIndex = 38;
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(213, 481);
+            this.btnOk.Location = new System.Drawing.Point(141, 476);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
             this.btnOk.TabIndex = 39;
@@ -193,7 +194,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 527);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(392, 527);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.rbFemale);
@@ -211,7 +213,7 @@
             this.Controls.Add(this.txtDrivername);
             this.Controls.Add(this.txtDrivercode);
             this.Name = "frmViewDriver";
-            this.Text = "frmViewDriver";
+            this.Text = "View Driver";
             this.Load += new System.EventHandler(this.frmViewDriver_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

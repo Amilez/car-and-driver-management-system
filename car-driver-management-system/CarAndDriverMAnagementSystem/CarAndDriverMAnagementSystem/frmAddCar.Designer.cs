@@ -39,13 +39,14 @@
             this.txtCarname = new System.Windows.Forms.TextBox();
             this.txtSuplier = new System.Windows.Forms.TextBox();
             this.txtCompens = new System.Windows.Forms.TextBox();
-            this.txtUnitprice = new System.Windows.Forms.TextBox();
             this.txtRentprice = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.boughtDate = new System.Windows.Forms.DateTimePicker();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.txtUnitprice = new System.Windows.Forms.MaskedTextBox();
+            this.btnReset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -130,13 +131,6 @@
             this.txtCompens.Size = new System.Drawing.Size(174, 20);
             this.txtCompens.TabIndex = 3;
             // 
-            // txtUnitprice
-            // 
-            this.txtUnitprice.Location = new System.Drawing.Point(147, 304);
-            this.txtUnitprice.Name = "txtUnitprice";
-            this.txtUnitprice.Size = new System.Drawing.Size(174, 20);
-            this.txtUnitprice.TabIndex = 5;
-            // 
             // txtRentprice
             // 
             this.txtRentprice.Location = new System.Drawing.Point(147, 349);
@@ -160,9 +154,9 @@
             this.label10.ForeColor = System.Drawing.Color.Red;
             this.label10.Location = new System.Drawing.Point(109, 9);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(168, 37);
+            this.label10.Size = new System.Drawing.Size(143, 37);
             this.label10.TabIndex = 11;
-            this.label10.Text = "ADD CAR";
+            this.label10.Text = "Add Car";
             // 
             // boughtDate
             // 
@@ -176,7 +170,7 @@
             // 
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancel.Location = new System.Drawing.Point(218, 394);
+            this.btnCancel.Location = new System.Drawing.Point(260, 392);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(72, 32);
             this.btnCancel.TabIndex = 10;
@@ -190,7 +184,7 @@
             this.btnAdd.BackColor = System.Drawing.Color.Transparent;
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(92, 394);
+            this.btnAdd.Location = new System.Drawing.Point(27, 394);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(65, 32);
             this.btnAdd.TabIndex = 9;
@@ -199,19 +193,41 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // txtUnitprice
+            // 
+            this.txtUnitprice.Location = new System.Drawing.Point(148, 307);
+            this.txtUnitprice.Mask = "000000000";
+            this.txtUnitprice.Name = "txtUnitprice";
+            this.txtUnitprice.Size = new System.Drawing.Size(104, 20);
+            this.txtUnitprice.TabIndex = 17;
+            // 
+            // btnReset
+            // 
+            this.btnReset.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.refresh;
+            this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.Location = new System.Drawing.Point(138, 394);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(76, 30);
+            this.btnReset.TabIndex = 18;
+            this.btnReset.Text = "Reset";
+            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // frmAddCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(367, 450);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.txtUnitprice);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.boughtDate);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtRentprice);
-            this.Controls.Add(this.txtUnitprice);
             this.Controls.Add(this.txtCompens);
             this.Controls.Add(this.txtSuplier);
             this.Controls.Add(this.txtCarname);
@@ -223,6 +239,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmAddCar";
+            this.Text = "Add Car";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,12 +257,13 @@
         private System.Windows.Forms.TextBox txtCarname;
         private System.Windows.Forms.TextBox txtSuplier;
         private System.Windows.Forms.TextBox txtCompens;
-        private System.Windows.Forms.TextBox txtUnitprice;
         private System.Windows.Forms.TextBox txtRentprice;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DateTimePicker boughtDate;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.MaskedTextBox txtUnitprice;
+        private System.Windows.Forms.Button btnReset;
     }
 }

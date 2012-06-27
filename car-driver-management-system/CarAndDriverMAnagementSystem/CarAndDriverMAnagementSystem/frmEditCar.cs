@@ -42,29 +42,38 @@ namespace CarAndDriverMAnagementSystem
         {
             SqlConnection conn = connect.Getconect();
             conn.Open();
-            if (dtpLiquidationDate.Enabled == true)
-            {
-                string sql = "update tblCars set Car_name='" + txtCarname.Text + "',suplier='" + txtSuplier.Text + "',Compens_amout='" + txtCompensAmout.Text + "',Bought_Date='" + dtpBoughtDate.Text + "',UnitPrice='" + txtUnitPrice.Text + "',RentPrice='" + txtRentPrice.Text + "',Liquidation_date='" + dtpLiquidationDate
-                    + "',liqidation_reason='" + txtLiquidationreason + "' where car_code='" + frmCar.Code + "'";
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                SqlDataReader sdr = cmd.ExecuteReader();
-                MessageBox.Show("Update successfull");
-                frmCar view = new frmCar();
-                view.Show();
-                this.Dispose();
+            //if (txtCarname.Text != "" && txtCompensAmout.Text != "" && txtRentPrice.Text != "" && txtSuplier.Text != "" && txtUnitPrice.Text != "" && txtRentPrice.Text != "")
+            //{
+              
+                if (dtpLiquidationDate.Enabled == true)
+                {
+                    string sql = "update tblCars set Car_name='" + txtCarname.Text + "',suplier='" + txtSuplier.Text + "',Compens_amout='" + txtCompensAmout.Text + "',Bought_Date='" + dtpBoughtDate.Text + "',UnitPrice='" + txtUnitPrice.Text + "',RentPrice='" + txtRentPrice.Text + "',Liquidation_date='" + dtpLiquidationDate
+                        + "',liqidation_reason='" + txtLiquidationreason + "' where car_code='" + frmCar.Code + "'";
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+                    SqlDataReader sdr = cmd.ExecuteReader();
+                    MessageBox.Show("Update successfull");
+                    frmCar view = new frmCar();
+                    view.Show();
+                    this.Dispose();
+                }
+                else
+                {
+                    string sql = "update tblCars set Car_name='" + txtCarname.Text + "',suplier='" + txtSuplier.Text + "',Compens_amout='" + txtCompensAmout.Text + "',Bought_Date='" + dtpBoughtDate.Text + "',UnitPrice='" + txtUnitPrice.Text + "',RentPrice='" + txtRentPrice.Text + "'where car_code='" + frmCar.Code + "'";
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+                    SqlDataReader sdr = cmd.ExecuteReader();
+                    MessageBox.Show("Update successfull");
+                    frmCar view = new frmCar();
+                    view.Show();
+                    this.Dispose();
+                }
+               
             }
-            else {
-                string sql = "update tblCars set Car_name='" + txtCarname.Text + "',suplier='" + txtSuplier.Text + "',Compens_amout='" + txtCompensAmout.Text + "',Bought_Date='" + dtpBoughtDate.Text + "',UnitPrice='" + txtUnitPrice.Text + "',RentPrice='" + txtRentPrice.Text + "'where car_code='" + frmCar.Code + "'";
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                SqlDataReader sdr = cmd.ExecuteReader();
-                MessageBox.Show("Update successfull");
-                frmCar view = new frmCar();
-                view.Show();
-                this.Dispose();
-            }
+        //    else
+        //    {
+        //        MessageBox.Show("You must enter full information");
 
-
-        }
+        //}
+        //}
 
         private void txtLiquidationreason_TextChanged(object sender, EventArgs e)
         {
