@@ -54,5 +54,15 @@ namespace CarAndDriverMAnagementSystem
             frmDrivers view = new frmDrivers();
             view.Show();
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtAdd.Text = "";
+            txtDrivercode.Text = "";
+            txtDrivername.Text = "";
+            txtTelephone.Text = "";
+           
+        }
+
     }
 }

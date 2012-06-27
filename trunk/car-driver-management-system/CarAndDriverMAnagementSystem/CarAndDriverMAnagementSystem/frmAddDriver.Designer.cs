@@ -32,7 +32,6 @@
             this.txtDrivercode = new System.Windows.Forms.TextBox();
             this.txtDrivername = new System.Windows.Forms.TextBox();
             this.txtAdd = new System.Windows.Forms.TextBox();
-            this.txtTelephone = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,6 +44,8 @@
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.txtTelephone = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // txtDrivercode
@@ -67,13 +68,6 @@
             this.txtAdd.Name = "txtAdd";
             this.txtAdd.Size = new System.Drawing.Size(132, 20);
             this.txtAdd.TabIndex = 2;
-            // 
-            // txtTelephone
-            // 
-            this.txtTelephone.Location = new System.Drawing.Point(179, 273);
-            this.txtTelephone.Name = "txtTelephone";
-            this.txtTelephone.Size = new System.Drawing.Size(135, 20);
-            this.txtTelephone.TabIndex = 3;
             // 
             // label1
             // 
@@ -125,11 +119,11 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(67, 19);
+            this.label6.Location = new System.Drawing.Point(78, 19);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(222, 37);
+            this.label6.Size = new System.Drawing.Size(178, 37);
             this.label6.TabIndex = 4;
-            this.label6.Text = "ADD DRIVER";
+            this.label6.Text = "Add Driver";
             // 
             // dateTimePicker1
             // 
@@ -174,7 +168,7 @@
             // 
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(85, 330);
+            this.btnAdd.Location = new System.Drawing.Point(43, 330);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(72, 32);
             this.btnAdd.TabIndex = 8;
@@ -187,7 +181,7 @@
             // 
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
             this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancel.Location = new System.Drawing.Point(211, 330);
+            this.btnCancel.Location = new System.Drawing.Point(264, 330);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(68, 32);
             this.btnCancel.TabIndex = 9;
@@ -196,12 +190,35 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // btnReset
+            // 
+            this.btnReset.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.refresh;
+            this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.Location = new System.Drawing.Point(152, 330);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(79, 32);
+            this.btnReset.TabIndex = 10;
+            this.btnReset.Text = "Reset";
+            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // txtTelephone
+            // 
+            this.txtTelephone.Location = new System.Drawing.Point(177, 273);
+            this.txtTelephone.Mask = "00000000000";
+            this.txtTelephone.Name = "txtTelephone";
+            this.txtTelephone.Size = new System.Drawing.Size(134, 20);
+            this.txtTelephone.TabIndex = 11;
+            // 
             // frmAddDriver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(359, 389);
+            this.Controls.Add(this.txtTelephone);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.rbFemale);
@@ -214,12 +231,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtTelephone);
             this.Controls.Add(this.txtAdd);
             this.Controls.Add(this.txtDrivername);
             this.Controls.Add(this.txtDrivercode);
             this.Name = "frmAddDriver";
-            this.Text = "frmAddDriver";
+            this.Text = "Add Driver";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,7 +246,6 @@
         private System.Windows.Forms.TextBox txtDrivercode;
         private System.Windows.Forms.TextBox txtDrivername;
         private System.Windows.Forms.TextBox txtAdd;
-        private System.Windows.Forms.TextBox txtTelephone;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -243,5 +258,7 @@
         private System.Windows.Forms.RadioButton rbFemale;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.MaskedTextBox txtTelephone;
     }
 }

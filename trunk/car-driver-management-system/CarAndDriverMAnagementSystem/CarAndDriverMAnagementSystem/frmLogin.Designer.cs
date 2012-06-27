@@ -39,14 +39,14 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(120, 87);
+            this.txtName.Location = new System.Drawing.Point(115, 65);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 20);
             this.txtName.TabIndex = 1;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(120, 128);
+            this.txtPassword.Location = new System.Drawing.Point(115, 106);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(100, 20);
             this.txtPassword.TabIndex = 2;
@@ -57,7 +57,7 @@
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.Red;
-            this.lblLogin.Location = new System.Drawing.Point(78, 36);
+            this.lblLogin.Location = new System.Drawing.Point(73, 14);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(85, 31);
             this.lblLogin.TabIndex = 5;
@@ -66,7 +66,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 90);
+            this.label2.Location = new System.Drawing.Point(40, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 6;
@@ -75,7 +75,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(45, 128);
+            this.label3.Location = new System.Drawing.Point(40, 106);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 0;
@@ -83,21 +83,21 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Image = global::CarAndDriverMAnagementSystem.Properties.Resources._lock;
-            this.btnLogin.Location = new System.Drawing.Point(48, 186);
+            this.btnLogin.Location = new System.Drawing.Point(43, 164);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(52, 45);
+            this.btnLogin.Size = new System.Drawing.Size(60, 31);
             this.btnLogin.TabIndex = 3;
+            this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.exit_48;
-            this.btnCancel.Location = new System.Drawing.Point(145, 186);
+            this.btnCancel.Location = new System.Drawing.Point(140, 164);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(62, 45);
+            this.btnCancel.Size = new System.Drawing.Size(57, 31);
             this.btnCancel.TabIndex = 4;
+            this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -106,7 +106,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(264, 243);
+            this.ClientSize = new System.Drawing.Size(242, 224);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label3);
@@ -115,7 +115,7 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtName);
             this.Name = "frmLogin";
-            this.Text = "frmLogin";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 

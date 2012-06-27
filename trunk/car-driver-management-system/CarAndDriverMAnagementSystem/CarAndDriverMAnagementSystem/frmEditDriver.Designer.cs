@@ -58,6 +58,7 @@
             this.btnCancel.Text = "Cancel";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOk
             // 
@@ -152,11 +153,11 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(31, 10);
+            this.label6.Location = new System.Drawing.Point(62, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(227, 37);
+            this.label6.Size = new System.Drawing.Size(176, 37);
             this.label6.TabIndex = 17;
-            this.label6.Text = "EDIT DRIVER";
+            this.label6.Text = "Edit Driver";
             // 
             // label1
             // 
@@ -219,7 +220,7 @@
             this.Controls.Add(this.txtDrivername);
             this.Controls.Add(this.txtDrivercode);
             this.Name = "frmEditDriver";
-            this.Text = "frmEditDriver";
+            this.Text = "Edit Driver";
             this.Load += new System.EventHandler(this.frmEditDriver_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

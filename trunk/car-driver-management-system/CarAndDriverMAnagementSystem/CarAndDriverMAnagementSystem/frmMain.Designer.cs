@@ -49,7 +49,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(486, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(603, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -58,14 +58,14 @@
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.logoutToolStripMenuItem,
             this.exitToolStripMenuItem});
-            this.menuToolStripMenuItem.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.Settings_48x48;
+            this.menuToolStripMenuItem.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.promotion;
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.menuToolStripMenuItem.Text = "System";
             // 
             // logoutToolStripMenuItem
             // 
-            this.logoutToolStripMenuItem.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.Log_Out_16x16;
+            this.logoutToolStripMenuItem.Image = global::CarAndDriverMAnagementSystem.Properties.Resources._lock;
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
             this.logoutToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.logoutToolStripMenuItem.Text = "Logout";
@@ -73,7 +73,7 @@
             // 
             // exitToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.exit_32;
+            this.exitToolStripMenuItem.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.Back;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.exitToolStripMenuItem.Text = "Exit";
@@ -84,7 +84,7 @@
             this.menuToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.managerCarToolStripMenuItem,
             this.managerDriverToolStripMenuItem});
-            this.menuToolStripMenuItem1.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.Car;
+            this.menuToolStripMenuItem1.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.heart;
             this.menuToolStripMenuItem1.Name = "menuToolStripMenuItem1";
             this.menuToolStripMenuItem1.Size = new System.Drawing.Size(66, 20);
             this.menuToolStripMenuItem1.Text = "Menu";
@@ -99,7 +99,7 @@
             // 
             // managerDriverToolStripMenuItem
             // 
-            this.managerDriverToolStripMenuItem.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.WLM_32;
+            this.managerDriverToolStripMenuItem.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.users;
             this.managerDriverToolStripMenuItem.Name = "managerDriverToolStripMenuItem";
             this.managerDriverToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.managerDriverToolStripMenuItem.Text = "Manager Driver";
@@ -110,23 +110,23 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem,
             this.backUpToolStripMenuItem});
-            this.helpToolStripMenuItem.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.Help_file_32;
+            this.helpToolStripMenuItem.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.rss;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
             // 
-            this.aboutToolStripMenuItem.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.Info;
+            this.aboutToolStripMenuItem.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.About;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // backUpToolStripMenuItem
             // 
-            this.backUpToolStripMenuItem.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.Database_Inactive_Hot_48;
+            this.backUpToolStripMenuItem.Image = global::CarAndDriverMAnagementSystem.Properties.Resources.Database;
             this.backUpToolStripMenuItem.Name = "backUpToolStripMenuItem";
-            this.backUpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.backUpToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.backUpToolStripMenuItem.Text = "BackUp";
             // 
             // frmMain
@@ -134,12 +134,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(486, 405);
+            this.BackgroundImage = global::CarAndDriverMAnagementSystem.Properties.Resources.c1273_scalextric_start_disney_pixar_cars_24;
+            this.ClientSize = new System.Drawing.Size(603, 401);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.Color.Black;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
-            this.Text = "Form1";
+            this.Text = "Main";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -21,28 +21,36 @@ namespace CarAndDriverMAnagementSystem
         {
             SqlConnection conn = connect.Getconect();
             conn.Open();
-            string sql = "select * from tbldrivers where driver_code='" + frmDrivers.Code + "'";
+            string sql = "select * from tblDrivers where driver_code='" + frmDrivers.Code + "'";
             SqlCommand cmd = new SqlCommand(sql, conn);
             SqlDataReader sdr = cmd.ExecuteReader();
-            while (sdr.Read())
-            {
+            while (sdr.Read()) {
                 txtDrivercode.Text = sdr.GetString(0);
                 txtDrivername.Text = sdr.GetString(1);
-                dateTimePicker1.Text = sdr.GetDateTime(2).ToShortDateString();
-                if (sdr.GetBoolean(3).ToString()=="True") { rbMale.Checked = true; } else { rbFemale.Checked = true; }
+                dateTimePicker1.Text = sdr.GetDateTime(2).ToString();
+                if (sdr.GetBoolean(3).ToString() == "true")
+                {
+                    rbMale.Checked = true;
+                }
+                else { rbFemale.Checked = true; }
                 txtAdd.Text = sdr.GetString(4);
                 txtTelephone.Text = sdr.GetString(5);
-                 
-
             }
+
+ 
         }
 
         private void btnOk_Click(object sender, EventArgs e)
         {
             SqlConnection conn = connect.Getconect();
             conn.Open();
-        
-            if(rbMale.Checked==true){gender="1";}
+        //if(txtAdd.Text=="" || txtDrivercode.Text=="" || txtDrivername.Text==""||txtTelephone.Text=="") {
+        //MessageBox.Show("You must enter full information");}
+        //else{
+            if(rbMale.Checked==true){gender="true";}
+            //if(txtAdd.Text=="" || txtDrivercode.Text=="" || txtDrivername.Text==""||txtTelephone.Text=="") {
+            //MessageBox.Show("You must enter full information");}
+            //else{
             string sql = "update tblDrivers set Driver_name='" + txtDrivername.Text + "',DoB='" + dateTimePicker1.Text + "',gender='"+gender+"',address='"+txtAdd.Text+"',telephone='"+txtTelephone.Text+"' where driver_code='" + frmDrivers.Code+ "'";
 
                 SqlCommand cmd = new SqlCommand(sql, conn);
@@ -50,8 +58,16 @@ namespace CarAndDriverMAnagementSystem
                 MessageBox.Show("Update successfull");
                 frmDrivers view = new frmDrivers();
                 view.Show();
-                this.Dispose();
-            }
+                 this.Dispose();
+             //}
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            frmDrivers view = new frmDrivers();
+            view.Show();
+        }
            
             }
         }

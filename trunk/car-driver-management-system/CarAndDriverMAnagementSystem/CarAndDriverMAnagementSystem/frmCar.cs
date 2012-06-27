@@ -32,7 +32,17 @@ namespace CarAndDriverMAnagementSystem
 
 
         }
-
+        public void reload() {
+            SqlConnection conn = connect.Getconect();
+            conn.Open();
+            string sql = "select * from tblCars";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            sda.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
+            conn.Close();
+        }
         private void btnSearchBoughtDate_Click(object sender, EventArgs e)
         {
             SqlConnection conn = connect.Getconect();
@@ -113,6 +123,38 @@ namespace CarAndDriverMAnagementSystem
            frmMain view = new frmMain();
             view.Show();
 
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            frmReportCar frm = new frmReportCar();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnView.Enabled = true;
+            btnEdit.Enabled = true;
+            btnDelete.Enabled = true;
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            string id = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            DialogResult kq = MessageBox.Show("Are you sure delete car with car code:" + id + "?", "Notice", MessageBoxButtons.YesNo);
+            if (kq == DialogResult.Yes)
+            {
+                SqlConnection conn = connect.Getconect();
+                conn.Open();
+                string sql = "delete tblCars where car_code='" + id + "'";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataReader sdr = cmd.ExecuteReader();
+                MessageBox.Show("Delete success");
+               
+            }
+            reload();
         }
     }
 }

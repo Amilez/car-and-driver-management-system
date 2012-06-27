@@ -57,11 +57,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(235, 13);
+            this.label1.Location = new System.Drawing.Point(126, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 37);
+            this.label1.Size = new System.Drawing.Size(337, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "View";
+            this.label1.Text = "View Information Car";
             // 
             // label2
             // 
@@ -230,6 +230,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(45, 348);
             this.dataGridView1.Name = "dataGridView1";
@@ -240,6 +241,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(596, 523);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dtpLiquidation);
@@ -263,7 +265,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmView";
-            this.Text = "frmView";
+            this.Text = "View Car";
             this.Load += new System.EventHandler(this.frmView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
