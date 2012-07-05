@@ -30,7 +30,6 @@ namespace CarAndDriverMAnagementSystem
             dataGridView1.DataSource = ds.Tables[0];
             conn.Close();
 
-
         }
         public void reload() {
             SqlConnection conn = connect.Getconect();
