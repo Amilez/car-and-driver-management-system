@@ -195,7 +195,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(392, 527);
+            this.ClientSize = new System.Drawing.Size(395, 503);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.rbFemale);
